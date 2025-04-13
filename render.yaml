@@ -1,0 +1,10 @@
+
+services:
+  - type: web
+    name: asistente-lab-dialogflow
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: service_account.json
+        sync: false
