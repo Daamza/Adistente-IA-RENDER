@@ -52,4 +52,4 @@ def webhook():
         return jsonify({"fulfillmentText": "No comprendí tu mensaje. ¿Podés repetirlo o enviar tu orden médica?"})
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0", port=10000)
