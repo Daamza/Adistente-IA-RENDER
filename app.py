@@ -1,1 +1,0 @@
-# app.py generado automáticamente (pendiente de funciones completas)
