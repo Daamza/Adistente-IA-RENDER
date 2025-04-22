@@ -12,7 +12,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 # Config
 openai.api_key = os.getenv("OPENAI_API_KEY")
 SPREADSHEET_NAME = "Turnos_ALIA"
-GPT_MODEL = "gpt-4"
+GPT_MODEL = "gpt-4-1106-preview"
 app = Flask(__name__)
 
 # Google Sheets
@@ -52,7 +52,7 @@ def dar_indicaciones(texto):
         "glucemia": "Ayuno de 8 a 12 hs.",
         "colesterol": "Ayuno de 12 hs.",
         "triglicéridos": "Ayuno de 12 hs.",
-        "TSH": "No requiere ayuno.",
+        "TSH": "No tomar medicación el dia del estudio, requiere ayuno.",
         "hemograma": "No requiere ayuno.",
         "orina": "Primera orina de la mañana, frasco estéril."
     }
